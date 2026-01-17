@@ -1,0 +1,49 @@
+
+datasource db {
+  provider = "postgresql"
+
+}
+
+generator client {
+  provider = "prisma-client-js"
+ 
+}
+
+model Aspirant {
+  id           String   @id @default(cuid())
+  name         String
+  nationalId   String   @unique
+  mobile       String
+  email        String   @unique
+  county       String
+  constituency String
+  ward         String
+  position     String
+
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Member {
+  id           String   @id @default(cuid())
+  name         String
+  nationalId   String   @unique
+  mobile       String
+  email        String   @unique
+  county       String
+  constituency String
+  ward         String
+
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

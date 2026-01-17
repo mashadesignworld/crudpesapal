@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/daguri1985/freekenya2#readme",
   "dependencies": {
+    "@prisma/client": "^7.2.0",
     "@radix-ui/react-tooltip": "^1.2.4",
     "@react-oauth/google": "^0.12.1",
     "@tippyjs/react": "^4.2.6",
     "axios": "^1.8.4",
     "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.6.2",
     "lucide-react": "^0.487.0",
     "mongoose": "^8.13.1",
     "next": "^15.2.4",
@@ -37,10 +39,12 @@
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
+    "styled-components": "^6.1.18",
     "tailwind": "^4.0.0",
     "tippy.js": "latest"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.1"
+    "@tailwindcss/postcss": "^4.1.1",
+    "prisma": "^7.2.0"
   }
 }

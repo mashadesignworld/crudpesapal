@@ -72,7 +72,7 @@ const Page = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form Data Before Validation:", formData); // Debugging
-
+    console.log("Submitting to API:", formData);
     // Ensure all required fields are filled
     if (
       !formData.name ||
@@ -168,6 +168,9 @@ const Page = () => {
               Register as an Aspirant Under Freekenya Movement
             </h2>
             <form className="mt-4" onSubmit={handleSubmit}>
+              {message && (
+    <p className="text-red-600 text-sm mt-2">{message}</p>
+  )}
               <input
                 type="text"
                 name="name"
@@ -296,7 +299,7 @@ const Page = () => {
       {showSuccessPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80">
           <div className="bg-green-500 text-white p-6 rounded-lg shadow-lg w-80 text-center">
-            <h2 className="text-xl font-bold">🎉 Registration Successful!</h2>
+            <h2 className="text-xl font-bold"> Registration Successful!</h2>
             <p className="mt-2">
               You have successfully registered as an Aspirant under FreeKenya in the 2027 Elections.
             </p>

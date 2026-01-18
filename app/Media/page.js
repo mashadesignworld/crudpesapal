@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { GoogleLogin } from '@react-oauth/google';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
-import Footer from '@/components/Footer';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
@@ -105,7 +104,7 @@ const Media = () => {
               </div>
             </div>
           </div>
-          <Footer />
+         
         </div>
       </div>
     </div>

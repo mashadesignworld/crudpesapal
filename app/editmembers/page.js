@@ -1,7 +1,7 @@
 "use client"; // Required for client-side interactivity
 import { useState, useEffect } from "react";
 import Navbar from '@/components/Navbar';
-import Footer from "@/components/Footer";
+
 
 const EditMembers = () => {
   const [members, setMembers] = useState([]); // State to store members
@@ -283,7 +283,7 @@ const EditMembers = () => {
           </div>
         )}
       </div>
-      <Footer />
+   
     </>
   );
 };

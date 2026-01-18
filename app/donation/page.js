@@ -1,7 +1,7 @@
 // app/donation/page.js
 import Navbar from '@/components/Navbar';
 import { sanityClient } from '../../lib/sanity'; // Adjust path as needed
-import Footer from '@/components/Footer';
+
 
 async function getDonation() {
   try {
@@ -91,7 +91,7 @@ export default async function donation() {
           <p>No donations received yet.</p>
         )}
       </div>
-      <Footer />
+      
     </>
   );
 }
